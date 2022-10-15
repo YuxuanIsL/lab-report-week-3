@@ -72,3 +72,30 @@ Then, I am going to search for strings that have `apple`.
 `str` loops for `apples`, `pears`, `pineapple`
 
 and returns the result `{apples, pineapple}`
+
+## Part Two - Debugging
+**In `ArrayExample.java`, I will be writing `ReverseInPlace` method.**
+Failure-inducing method is:
+![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/%E5%9B%BE%E7%89%87%201.png)
+
+The symptom is 
+![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/%E5%9B%BE%E7%89%87%202.png)
+
+The fixed code is
+![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/%E5%9B%BE%E7%89%87%203.png)
+
+Problems in code: It fails to make the correct exchange and fails to loop through every index.
+So when it loops to index[1] which is 2, it fails to set the exchange.
+
+
+**In ListExample.java, I will be writing `filter` method.**
+Failure inducing method is:
+![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/testFilter%20failure-inputting%20code.png)
+
+The symtom is
+![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/testFilter%20%20symptom%20.png)
+
+The fixed code is
+![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/filter%20fixed.png)
+
+It fails to do its work because if the `index 0` is deleted, it will always add `s` to `index 0`. 
