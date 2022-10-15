@@ -71,4 +71,4 @@ Then, I am going to search for strings that have `apple`.
 
 `str` loops for `apples`, `pears`, `pineapple`
 
-and returns the result `{apples, pineapple}`.
+and returns the result `{apples, pineapple}`
