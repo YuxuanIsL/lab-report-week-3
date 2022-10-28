@@ -95,10 +95,16 @@ As a result, the array list is now `{apples, pears, pineapple}`.
 Here I am calling line 33 in my code by typing `/search?s=apple`, so that line 33 becomes `true` and continues the `if` statement.
 
 What is after `?` is read as `String[] inputStrs` and will be splitted by `=`, so `inputStrs[0]` becomes `s`.
+
 Then `inputStrs[1]` becomes `apple`.
+
 `apple` is passed to `toSearch`
+
 `str` loops for `apples`, `pears`, `pineapple` in `strs`
-and returns the result `{apples, pineapple}`
+
+and `result` stores the answer as `{apples, pineapple}`
+
+Finally, we make it Strings to return.
 
 ## Part Two - Debugging
 **In `ArrayExample.java`, I will be writing `ReverseInPlace` method.**
