@@ -55,22 +55,49 @@ class Handler implements URLHandler{
 ```
 
 Here I am adding new strings to the original arraylist of strings, so I am calling `/add`.
+
+
 ![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/add%20apples.png)
+
+`strs` is defautly an empty ArrayList. 
+
+When I type `/add?=apple` in the URL on the browser, I am calling the action in line 26 in the code. 
+
+`/add?s=apple` what is after `?` is read as `String[] inputStrs` and will be splitted by `=`, so `inputStrs[0]` becomes `s`.
+
+Line 28 becomes true, then strs added `apple` since it is `inputStrs[1]`.
+
 ![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/add%20pears.png)
+
+When I type `/add?=pears` in the URL on the browser, I am calling the action in line 26 in the code. 
+
+`/add?s=pears` what is after `?` is read as `String[] inputStrs` and will be splitted by `=`, so `inputStrs[0]` becomes `s`.
+
+Line 28 becomes true, then strs added `pears` since it is `inputStrs[1]`.
+
 ![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/add%20pineapple.png)
 
-According to my codes, what's after "s" has been added to the arraylist everytime I call the method, as they are `inputStrs[1]`
+When I type `/add?=pineapple` in the URL on the browser, I am calling the action in line 26 in the code. 
+
+`/add?s=pineapple` what is after `?` is read as `String[] inputStrs` and will be splitted by `=`, so `inputStrs[0]` becomes `s`.
+
+Line 28 becomes true, then strs added `pineapple` since it is `inputStrs[1]`.
+
 
 As a result, the array list is now `{apples, pears, pineapple}`.
 
-Then, I am going to search for strings that have `apple`.
+
+
+**Then, I am going to search for strings that have `apple`.**
 
 ![image](https://github.com/YuxuanIsL/lab-report-week-3/blob/main/search%20for%20apples.png)
 
+Here I am calling line 33 in my code by typing `/search?s=apple`, so that line 33 becomes `true` and continues the `if` statement.
+
+What is after `?` is read as `String[] inputStrs` and will be splitted by `=`, so `inputStrs[0]` becomes `s`.
+Then `inputStrs[1]` becomes `apple`.
 `apple` is passed to `toSearch`
-
-`str` loops for `apples`, `pears`, `pineapple`
-
+`str` loops for `apples`, `pears`, `pineapple` in `strs`
 and returns the result `{apples, pineapple}`
 
 ## Part Two - Debugging
